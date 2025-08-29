@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushank Tamang - ePortfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* Body & Fonts */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+      color: #f1f1f1;
+      scroll-behavior: smooth;
+    }
+
+    /* Header Section */
+    header {
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      text-align: center;
+      padding: 80px 20px 50px;
+      position: relative;
+      overflow: hidden;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #ff6a00, #ee0979);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Navigation Menu */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(44, 83, 100, 0.8);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+      padding: 10px 0;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 900px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .nav-links a {
+      color: #f1f1f1;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 0 5px;
+      border-radius: 8px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #ff6a00;
+      color: white;
+    }
+
+    /* Section Styling */
+    section {
+      padding: 60px 20px;
+      max-width: 800px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .section-card {
+      margin-bottom: 40px;
+    }
+
+    .section-card h2 {
+      border-bottom: 2px solid #ff6a00;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    
+    .section-card code {
+      display: block;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      padding: 15px;
+      white-space: pre-wrap;
+      font-family: 'Courier New', Courier, monospace;
+      color: #f1f1f1;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    ul, ol {
+        padding-left: 20px;
+    }
+
+    /* Buttons */
+    .btn {
+      border-radius: 8px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border-color: #007bff;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+    .btn-success {
+      background-color: #28a745;
+      border-color: #28a745;
+    }
+    .btn-success:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.5);
+      backdrop-filter: blur(8px);
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav-links a {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+      }
+      section {
+        padding: 40px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Sushank Tamang - ePortfolio</h1>
+    <p>Junior Full Stack Developer</p>
+  </header>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="#fullstack">Full Stack</a></li>
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#bootstrap">Bootstrap</a></li>
+      <li><a href="#js">JavaScript</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="fullstack">
+      <div class="section-card">
+        <h2>Full Stack Development</h2>
+        <p>Full Stack Development means working with both front-end and back-end technologies. A full stack developer can build complete applications, handling user interfaces, server logic, and databases efficiently.</p>
+        <p><b>Working Example and Explanation:</b> The code below demonstrates the different technology layers a full stack developer must master. It shows how front-end (visible to the user), back-end (server-side logic), and databases (data storage) all work together in a complete web application.</p>
+        <code>Front-end: HTML, CSS, JavaScript<br>Back-end: Node.js, Python, PHP<br>Database: MySQL, MongoDB</code>
+        <p>Additional aspects of full stack development include:</p>
+        <ul>
+          <li>Version control using Git and GitHub for collaboration.</li>
+          <li>API integration to connect front-end and back-end seamlessly.</li>
+          <li>Security practices like authentication, authorization, and data validation.</li>
+          <li>Deployment of web applications using cloud platforms such as AWS or Heroku.</li>
+          <li>Continuous learning of new technologies and frameworks.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="html">
+      <div class="section-card">
+        <h2>HTML</h2>
+        <p>HTML (HyperText Markup Language) is the foundation of web pages. It structures content with elements like headings, paragraphs, images, and links, serving as the skeleton for every website.</p>
+        <p><b>Working Example and Explanation:</b> This code snippet is a foundational HTML structure. The `&lt;h1&gt;` tag creates a top-level heading, and the `&lt;p&gt;` tag creates a paragraph of text. These are the most basic building blocks of any webpage, demonstrating how HTML organizes content on a page.</p>
+        <code>&lt;h1&gt;Hello World&lt;/h1&gt;<br>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+        <p>Now down below is the actual output</p>
+        <h1>Hello World</h1><br><p>This is a paragraph</p>
+        <p>Key concepts in HTML include:</p>
+        <ul>
+          <li>HTML elements and tags to structure content.</li>
+          <li>Attributes for additional element information (e.g., class, id, src, href).</li>
+          <li>Forms and input elements to capture user data.</li>
+          <li>Lists, tables, and semantic tags for better content organization.</li>
+          <li>Embedding media like images, videos, and audio for richer user experience.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="css">
+      <div class="section-card">
+        <h2>CSS</h2>
+        <p>CSS (Cascading Style Sheets) is used to style and design web pages. It defines how HTML elements are displayed, including colors, layouts, spacing, and animations. CSS makes a website visually attractive and user-friendly.</p>
+        <p><b>Working Example and Explanation:</b> This CSS rule targets all `&lt;h1&gt;` elements and sets their text color to `red` and aligns the text to the `center`. This shows how CSS selectors and properties are used to control the visual presentation of HTML elements, which makes a website more appealing.</p>
+        <code>h1 { color: red; text-align: center; }</code>
+        <p>Additional CSS concepts include:</p>
+        <ul>
+          <li>Selectors: class, id, element, attribute, and pseudo-classes.</li>
+          <li>Box Model: margin, border, padding, and content.</li>
+          <li>Flexbox and Grid for responsive layouts.</li>
+          <li>Transitions and animations for interactive design.</li>
+          <li>Media queries for mobile-first responsive design.</li>
+          <li>Custom properties (CSS variables) for reusable styles.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="bootstrap">
+      <div class="section-card">
+        <h2>Bootstrap Framework</h2>
+        <p>Bootstrap is a responsive front-end framework that provides ready-made UI components like buttons, navigation bars, and forms. It helps developers quickly design professional-looking websites without writing much CSS.</p>
+        <p><b>Working Example and Explanation:</b> This code demonstrates how Bootstrap uses utility classes to apply complex styling with minimal effort. By simply adding the classes `btn` and `btn-primary` to a `&lt;button&gt;` element, it automatically inherits Bootstrap's default button styling, including a professional appearance and a blue color, without requiring you to write any custom CSS.</p>
+        <code>&lt;button class="btn btn-primary"&gt;Bootstrap Button&lt;/button&gt;</code>
+        <button class="btn btn-primary">Bootstrap Button</button>
+        <p>Bootstrap core concepts include:</p>
+        <ul>
+          <li>Grid system for responsive page layout.</li>
+          <li>Prebuilt components like modals, navbars, cards, and alerts.</li>
+          <li>Utility classes for spacing, colors, typography, and visibility.</li>
+          <li>Customizable themes and color palettes.</li>
+          <li>Integration with JavaScript for dynamic UI elements like carousels and dropdowns.</li>
+          <li>Mobile-first approach for modern web design.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="js">
+      <div class="section-card">
+        <h2>JavaScript</h2>
+        <p>JavaScript is a programming language that adds interactivity to web pages. It enables features like form validation, dynamic content updates, and user event handling, making websites interactive and responsive.</p>
+        <p><b>Working Example and Explanation:</b> This example demonstrates how JavaScript can change the content of an HTML element when you click a button. The `onclick` attribute executes a small piece of JavaScript code that finds the paragraph element with the ID `js-demo-p` and changes its content. This clearly shows how the language can directly interact with and manipulate a webpage's content after it has loaded, making the page dynamic and responsive to user input.</p>
+        <button class="btn btn-success" onclick="document.getElementById('js-demo-p').innerHTML='Hello JS! The text was changed.'">Click me to see JavaScript in action</button>
+        <p id="js-demo-p">Original text here.</p>
+        <p>Additional JavaScript topics include:</p>
+        <ul>
+          <li>DOM manipulation to change content dynamically.</li>
+          <li>Event handling for user interactions like clicks and keypresses.</li>
+          <li>ES6+ features like arrow functions, promises, async/await, and modules.</li>
+          <li>AJAX and Fetch API for fetching data from servers without page reload.</li>
+          <li>Debugging and error handling techniques for stable applications.</li>
+          <li>Integration with front-end frameworks like React, Vue, and Angular.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sushank Tamang. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
